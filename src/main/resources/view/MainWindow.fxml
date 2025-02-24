@@ -59,6 +59,7 @@
                                     </padding>
 
                                     <StackPane fx:id="tagListPanelPlaceholder"/>
+
                                 </VBox>
                             </VBox>
                         </StackPane>

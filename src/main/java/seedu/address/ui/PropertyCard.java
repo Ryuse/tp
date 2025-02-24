@@ -52,8 +52,16 @@ public class PropertyCard extends UiPart<Region> {
         this.property = property;
         id.setText(displayedIndex + ". ");
         postalCode.setText("Postal Code: " + property.getPostalCode());
+
+        houseNumber.setVisible(!property.getHouseNumber().equals(""));
+        houseNumber.setManaged(!property.getHouseNumber().equals(""));
         houseNumber.setText("House Number: " + property.getHouseNumber());
+
+        unitNumber.setVisible(!property.getUnitNumber().equals(""));
+        unitNumber.setManaged(!property.getUnitNumber().equals(""));
         unitNumber.setText("Unit Number: " + property.getUnitNumber());
+
+
         name.setText(property.getName());
 
         property.getTags().stream()

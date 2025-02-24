@@ -34,9 +34,10 @@ public class PropertyListPanel extends UiPart<Region> {
 
     public static ObservableList<Property> getSamplePropertyData(){
         ArrayList<Property> testData = new ArrayList<>();
-        Property sampleProperty = new Property("123456", "11A", "11-11111");
+        Property sampleProperty = new Property("123456", "", "11-11111");
         testData.add(sampleProperty);
-
+        sampleProperty = new Property("123456", "12A", "");
+        testData.add(sampleProperty);
         return FXCollections.observableList(testData);
     }
 
