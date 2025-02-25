@@ -36,7 +36,7 @@
             </HBox>
             <FlowPane fx:id="tags"/>
             <Label styleClass="cell_big_label" text="Owner(s)"/>
-            <StackPane fx:id="ownerListPanelPlaceholder" VBox.vgrow="ALWAYS"/>
+            <StackPane fx:id="ownerListPanelPlaceholder" VBox.vgrow="NEVER" maxHeight="150"/>
         </VBox>
     </GridPane>
 </HBox>

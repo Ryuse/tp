@@ -3,12 +3,15 @@ package seedu.address.ui;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
+import javafx.scene.layout.StackPane;
 import seedu.address.model.property.Property;
+import seedu.address.model.tag.Tag;
 
 
 /**
@@ -27,6 +30,9 @@ public class PropertyCard extends UiPart<Region> {
      */
 
     public final Property property;
+    private OwnerListPanel ownerListPanel;
+    @FXML
+    private StackPane ownerListPanelPlaceholder;
 
     @FXML
     private HBox cardPane;
@@ -67,6 +73,11 @@ public class PropertyCard extends UiPart<Region> {
         property.getTags().stream()
                 .sorted(Comparator.comparing(tag -> tag.tagName))
                 .forEach(tag -> tags.getChildren().add(new Label(tag.tagName)));
+
+        ownerListPanel = new OwnerListPanel(FXCollections.observableList(property.getOwners()));
+        ownerListPanelPlaceholder.getChildren().add(ownerListPanel.getRoot());
+
+
     }
 }
 

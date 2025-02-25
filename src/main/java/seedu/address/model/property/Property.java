@@ -15,7 +15,7 @@ public class Property{
     private String houseNumber;
     private String unitNumber;
     private HashSet<Tag> tags = new HashSet<>();
-    private ArrayList<Person> owners;
+    private ArrayList<Person> owners = new ArrayList<>();
 
     public Property(String postalCode, String houseNumber, String unitNumber){
         this.postalCode = postalCode;
@@ -23,6 +23,10 @@ public class Property{
         this.unitNumber = unitNumber;
     }
 
+    public void setName(String name){
+        this.name = name;
+
+    }
     public String getName(){
         return name;
     }
