@@ -48,7 +48,7 @@ public class PropertyListPanel extends UiPart<Region> {
                 .map(Tag::new)
                 .collect(Collectors.toSet());
 
-        Person sampleOwner = new Person(new Name("Owner"),
+        Person sampleOwner = new Person(new Name("Owner Test"),
                 new Phone("12345678"),
                 new Email("owner@example.com"),
                 new Address("A"),
