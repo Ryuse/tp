@@ -27,9 +27,8 @@ import seedu.address.testutil.PersonBuilder;
  * Contains integration tests (interaction with the Model) and unit tests for RemarkCommand.
  */
 public class RemarkCommandTest {
-
+    private static final String VALID_REMARK = "Some Remark";
     private Model model = new ModelManager(getTypicalAddressBook(), new UserPrefs());
-    private final String VALID_REMARK = "Some remark";
 
     @Test
     public void execute_addRemarkUnfilteredList_success() {
