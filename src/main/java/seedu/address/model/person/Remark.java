@@ -3,27 +3,24 @@ package seedu.address.model.person;
 import static java.util.Objects.requireNonNull;
 
 /**
- * Represents a Person's phone number in the address book.
- * Guarantees: immutable; is valid as declared.
+ * Represents a Person's remark in the address book.
+ * Guarantees: immutable; is always valid
  */
 public class Remark {
-
-
     public final String value;
 
     /**
      * Constructs a {@code Remark}.
      *
-     * @param remark A valid remark.
+     * @param remark The remark associated with a person. Cannot be null.
      */
     public Remark(String remark) {
         requireNonNull(remark);
         value = remark;
     }
 
-
     /**
-     * Returns Remark as String.
+     * Returns the string representation of this Remark.
      *
      * @return The remark as a string.
      */
@@ -51,5 +48,4 @@ public class Remark {
     public int hashCode() {
         return value.hashCode();
     }
-
 }

@@ -14,7 +14,7 @@ import seedu.address.model.person.Remark;
 
 public class RemarkCommandParserTest {
     private RemarkCommandParser parser = new RemarkCommandParser();
-    private final String nonEmptyRemark = "Non-empty remark";
+    private final String nonEmptyRemark = "Some remark.";
 
     @Test
     public void parse_indexSpecified_success() {
@@ -30,7 +30,6 @@ public class RemarkCommandParserTest {
         assertParseSuccess(parser, userInput, expectedCommand);
     }
 
-
     @Test
     public void parse_missingCompulsoryField_failure() {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, RemarkCommand.MESSAGE_USAGE);
@@ -41,6 +40,4 @@ public class RemarkCommandParserTest {
         // no index
         assertParseFailure(parser, RemarkCommand.COMMAND_WORD + " " + nonEmptyRemark, expectedMessage);
     }
-
-
 }
