@@ -10,5 +10,3 @@ MatchEstate is a desktop address book application used for practicing Software E
 It is written in Java, and has about 10 kLoC.
 
 ### Given below are my contributions to the project.
-
-- 
