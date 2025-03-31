@@ -32,7 +32,7 @@ public class AddPreferenceTagCommand extends Command {
             + "Parameters: PERSON_INDEX (must be a positive integer) PREFERENCE_INDEX (must be a positive integer) "
             + "[" + PREFIX_TAG + "TAG]... "
             + "[" + PREFIX_NEW_TAG + "NEW_TAG]...\n"
-            + "Example: " + COMMAND_WORD + " 2 "
+            + "Example: " + COMMAND_WORD + " 2 1 "
             + PREFIX_TAG + "quiet "
             + PREFIX_TAG + "pet-friendly "
             + PREFIX_NEW_TAG + "family-friendly "

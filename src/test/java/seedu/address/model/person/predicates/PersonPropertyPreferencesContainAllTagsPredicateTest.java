@@ -21,7 +21,7 @@ public class PersonPropertyPreferencesContainAllTagsPredicateTest {
 
     private final Person dummyPerson = new Person(
             new Name("Dummy"),
-            new Phone("00000000"),
+            new Phone("10000000"),
             new Email("dummy@example.com"),
             List.of(),
             List.of()
